@@ -43,7 +43,7 @@ hs_public_key = File.read("#{params[:'hs-dir']}/hs_ed25519_public_key")[32..-1]
 #      algorithm  ALGORITHM.&id({IOSet}),
 #      parameters ALGORITHM.&Type({IOSet}{@algorithm}) OPTIONAL
 # }
-alg_id = OpenSSL::ASN1::Sequence([OpenSSL::ASN1::ObjectId('ED25519')])
+alg_id = OpenSSL::ASN1::Sequence([OpenSSL::ASN1::ObjectId('Ed25519')])
 
 # Create SubjectPublicKeyInfo
 # ASN.1 definition of SubjectPublicKeyInfo from RFC 2986
